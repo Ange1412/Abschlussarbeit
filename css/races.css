@@ -1,10 +1,17 @@
 body{
-
+background-color:
 }
-
 
 /*header*/
 nav{
-    text-align: right;
-    
+    text-align: right; 
 }
+
+footer {
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
