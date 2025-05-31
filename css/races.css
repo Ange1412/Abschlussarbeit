@@ -1,14 +1,20 @@
-body{
-background-color:
+header.w3-container {
+  position: relative;
+  min-height: 100px; /* ggf. anpassen */
 }
 
-/*header*/
-nav{
-    text-align: right; 
+header.w3-container h1 {
+  margin: 0;
 }
 
-footer {
-   
+.nav-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 img {

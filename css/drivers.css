@@ -1,0 +1,25 @@
+header.w3-container {
+  position: relative;
+  min-height: 100px; /* Höhe nach Bedarf anpassen */
+}
+
+header.w3-container h1 {
+  margin: 0;
+}
+
+.nav-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.fahrer-bild {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
