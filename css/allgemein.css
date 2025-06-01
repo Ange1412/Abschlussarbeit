@@ -1,9 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+
 .nav-right {
   position: absolute;
-  right: 0;
+  right: 20px; /* Abstand zum rechten Rand */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
+
+.nav-right .w3-button:hover,
+.nav-right a:hover {
+  background-color: #ff0000 !important;
+  color: white !important;
+  transition: background 0.2s;
+}
+
+

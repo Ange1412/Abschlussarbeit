@@ -7,3 +7,28 @@ header.w3-container {
 header.w3-container h1 {
   margin: 0;
 }
+.home-title {
+  animation: opac 4s;
+}
+
+@keyframes opac {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.welcome-text {
+  font-size: 4rem;      /* noch größer */
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-bottom: 0.2em; /* sehr kleiner Abstand */
+}
+
+.formula1-text {
+  font-size: 7rem;      /* noch größer */
+  font-weight: bold;
+  font-style: italic;
+  color: #ff0000;
+  display: block;
+  margin-top: 0;        /* kein Abstand nach oben */
+}
