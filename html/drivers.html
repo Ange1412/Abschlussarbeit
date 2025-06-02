@@ -13,7 +13,10 @@
 </head>
 <body>
 <header class="w3-container w3-black">
-  <h1 class="w3-jumbo"><img src="../media/logo.png" width="150" height="50"></h1>
+  <h1 class="w3-jumbo">
+    <img src="../media/logo.png" width="150" height="50" style="cursor:pointer;" alt="Logo"
+         onclick="document.getElementById('id01').style.display='block'">
+  </h1>
   <nav class="nav-right">
     <a href="../home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
     <a href="drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
@@ -21,8 +24,7 @@
   </nav>
 
 <div class="w3-container">
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Klicke!</button>
-
+  <!-- Der Button wurde entfernt, das Logo öffnet jetzt das Modal -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-teal"> 
@@ -31,11 +33,11 @@
         <h2>Aktuelle Rangliste der Fahrer</h2>
       </header>
       <div class="w3-container">
-        <p>Platz	Fahrer	Team	Punkte
-1	Lando Norris	McLaren	161
-2	Oscar Piastri	McLaren	158
-3	Max Verstappen	Red Bull	136
-4	George Russell	Mercedes	115</p>
+        <p>Platz Fahrer Team Punkte<br>
+        1 Lando Norris McLaren 161<br>
+        2 Oscar Piastri McLaren 158<br>
+        3 Max Verstappen Red Bull 136<br>
+        4 George Russell Mercedes 115</p>
         <p>Some text..</p>
       </div>
       <footer class="w3-container w3-teal">
@@ -44,9 +46,18 @@
     </div>
   </div>
 </div>
+<script>
+window.onclick = function(event) {
+  var modal = document.getElementById('id01');
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </header>
 
 <div class="w3-row">
+  <div class="w3-panel w3-padding-16"></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Ferrari</p></div>
   <div class="w3-col w3-padding" style="width:25%">
     <img class="fahrer-bild" src="../media/ferrari_fahrer.avif" alt="Ferrari Fahrer">
@@ -59,6 +70,7 @@
 
 
 <div class="w3-row">
+  <div class="w3-panel w3-padding-16"></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Mc Laren</p></div>
   <div class="w3-col w3-padding" style="width:25%">
     <img class="fahrer-bild" src="../media/mclaren_fahrer.webp" alt="McLaren Fahrer">
@@ -70,6 +82,7 @@
 <hr class="w3-border-red" style="border-top: 3px solid; margin: 30px 0;">
 
 <div class="w3-row">
+  <div class="w3-panel w3-padding-16"></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Red Bull</p></div>
   <div class="w3-col w3-padding" style="width:25%">
     <img class="fahrer-bild" src="../media/redbull_fahrer.jpeg" alt="Red Bull Fahrer">
