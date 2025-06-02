@@ -32,3 +32,17 @@ header.w3-container h1 {
   display: block;
   margin-top: 0;        /* kein Abstand nach oben */
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("../media/hintergrund.avif");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
