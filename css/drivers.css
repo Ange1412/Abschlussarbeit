@@ -1,0 +1,20 @@
+header.w3-container {
+  position: relative;
+  min-height: 100px; /* Höhe nach Bedarf anpassen */
+}
+
+header.w3-container h1 {
+  margin: 0;
+}
+
+
+.fahrer-bild {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+p {
+font-size: 100%;
+}

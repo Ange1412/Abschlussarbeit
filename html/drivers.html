@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Spalten</title>
+    <title>Drivers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="../css/drivers.css">
+    <link rel="stylesheet" href="../css/allgemein.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../media/logo.png"> 
 </head>
 <body>
-    <header class="w3-container w3-black">
-      <h1 class="w3-jumbo"><img src="../media/logo.png" width="150" height="50"></h1>
-      <nav>
-        <a href="../home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
-        <a href="drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
-        <a href="races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
-      </nav>
-    </header>
+<header class="w3-container w3-black">
+  <h1 class="w3-jumbo"><img src="../media/logo.png" width="150" height="50"></h1>
+  <nav class="nav-right">
+    <a href="../home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
+    <a href="drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
+    <a href="races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
+  </nav>
+
+<div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Klicke!</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Aktuelle Rangliste der Fahrer</h2>
+      </header>
+      <div class="w3-container">
+        <p>Platz	Fahrer	Team	Punkte
+1	Lando Norris	McLaren	161
+2	Oscar Piastri	McLaren	158
+3	Max Verstappen	Red Bull	136
+4	George Russell	Mercedes	115</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+</div>
+</header>
 
 <div class="w3-row">
   <div class="w3-col w3-padding" style="width:25%"><p>Ferrari</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Charles Leclerc Lewis Hamilton</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Informationen zu WM Punkte</p></div>
+  <div class="w3-col w3-padding" style="width:25%">
+    <img class="fahrer-bild" src="../media/ferrari_fahrer.avif" alt="Ferrari Fahrer">
+  </div>
+  <div class="w3-col w3-padding" style="width:25%"><p>3	Charles Leclerc	356	Ferrari</p></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
 </div>
+
+<hr class="w3-border-red" style="border-top: 3px solid; margin: 30px 0;">
+
 
 <div class="w3-row">
   <div class="w3-col w3-padding" style="width:25%"><p>Mc Laren</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Lando Norris Oscar Piastri</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Wm Punkte</p></div>
+  <div class="w3-col w3-padding" style="width:25%">
+    <img class="fahrer-bild" src="../media/mclaren_fahrer.webp" alt="McLaren Fahrer">
+  </div>
+  <div class="w3-col w3-padding" style="width:25%"><p>2	Lando Norris	374	McLaren</p></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
 </div>
+
+<hr class="w3-border-red" style="border-top: 3px solid; margin: 30px 0;">
 
 <div class="w3-row">
   <div class="w3-col w3-padding" style="width:25%"><p>Red Bull</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Max Verstappen Yuki Tsunoda</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Wm Punkte</p></div>
+  <div class="w3-col w3-padding" style="width:25%">
+    <img class="fahrer-bild" src="../media/redbull_fahrer.jpeg" alt="Red Bull Fahrer">
+  </div>
+  <div class="w3-col w3-padding" style="width:25%"><p>1	Max Verstappen 437	Red Bull</p></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
 </div>
+
+<hr class="w3-border-red" style="border-top: 3px solid; margin: 30px 0;">
 
 <div class="w3-row">
   <div class="w3-col w3-padding" style="width:25%"><p>Mercedes</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>George Russel Andrea Kimi Antonelli</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Wm Punkte</p></div>
+  <div class="w3-col w3-padding" style="width:25%">
+    <img class="fahrer-bild" src="../media/mercedes_fahrer.jpeg" alt="Mercedes Fahrer">
+  </div>
+  <div class="w3-col w3-padding" style="width:25%"><p>6	George Russel	245	Mercedes-AMG</p></div>
   <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
 </div>
 
-<div class="w3-row">
-  <div class="w3-col w3-padding" style="width:25%"><p>WilliamsAuto</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Fahrer</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Teaminfos</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
-</div>
-
-<div class="w3-row">
-  <div class="w3-col w3-padding" style="width:25%"><p>Haas</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Fahrer</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Teaminfos</p></div>
-  <div class="w3-col w3-padding" style="width:25%"><p>Teamfoto</p></div>
 </div>
 
   <footer class="w3-container w3-red">

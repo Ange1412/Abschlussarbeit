@@ -1,16 +1,11 @@
-body{
-background-color:
+header.w3-container {
+  position: relative;
+  min-height: 100px; /* ggf. anpassen */
 }
 
-/*header*/
-nav{
-    text-align: right; 
+header.w3-container h1 {
+  margin: 0;
 }
-
-footer {
-   
-}
-
 img {
     max-width: 100%;
     height: auto;
