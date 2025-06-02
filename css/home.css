@@ -46,3 +46,20 @@ header.w3-container h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.boxenstopp-row {
+  margin: 60px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.boxenstopp-video {
+  text-align: center;
+}
+.boxenstopp-text {
+  display: flex;
+  align-items: flex-start;
+}
+.boxenstopp-text p {
+  font-size: 1.2em;
+  margin-left: 40px;
+  margin-top: 0;
+}
