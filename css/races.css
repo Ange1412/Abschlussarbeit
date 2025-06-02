@@ -11,6 +11,17 @@ img {
     height: auto;
   }
 
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .map-container img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .footer-container {
     display: flex;
