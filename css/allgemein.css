@@ -27,3 +27,18 @@ footer {
 
 }
 
+/* Modal Header, Footer und Hintergrund in Rot, Text schwarz, Box schmaler */
+.w3-modal-content {
+  max-width: 400px;
+  margin: auto;
+  color: #000; /* Textfarbe schwarz */
+  background-color: #fff; /* Box-Hintergrund weiß */
+}
+
+.w3-modal-content .w3-container.w3-teal,
+.w3-modal-content .w3-container.w3-teal,
+.w3-modal-content .w3-container.w3-teal {
+  background-color: #b80000 !important; /* Rot wie im Logo */
+  color: #fff !important; /* Schrift weiß im Header/Footer */
+}
+

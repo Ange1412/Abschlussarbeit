@@ -34,13 +34,13 @@ header.w3-container h1 {
 }
 
 .parallax {
-  /* The image used */
+  /* hintergrund Bild */
   background-image: url("../media/hintergrund.avif");
 
-  /* Set a specific height */
+  /* grösse des Bild */
   min-height: 500px;
 
-  /* Create the parallax scrolling effect */
+  /* der parallax scrolling effekt */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,3 +63,6 @@ header.w3-container h1 {
   margin-left: 40px;
   margin-top: 0;
 }
+
+
+
