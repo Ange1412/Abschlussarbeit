@@ -46,23 +46,60 @@ header.w3-container h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.boxenstopp-title {
+  font-size: 3rem;      /* noch größer */
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+}
 .boxenstopp-row {
   margin: 60px 0;
   display: flex;
   align-items: flex-start;
 }
+
 .boxenstopp-video {
   text-align: center;
-}
-.boxenstopp-text {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
+
 .boxenstopp-text p {
   font-size: 1.2em;
   margin-left: 40px;
-  margin-top: 0;
+  margin-top: 85px;
 }
+
+.rennen-info-row {
+  margin: 60px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rennen-info-text {
+  margin-left: 40px;
+  max-width: 500px; /* oder ein Wert nach Wunsch */
+  /* optional für schöneres Layout: */
+  /* margin-right: auto; */
+}
+
+.rennen-info-bild {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* statt center */
+  justify-content: flex-start;
+  margin-top: 0;             /* falls gesetzt, auf 0 */
+}
+.rennen-bild {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-right: 40px;
+  margin-top: 0;             /* kein Abstand nach oben */
+}
+
 
 
 
