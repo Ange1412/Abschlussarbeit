@@ -18,3 +18,20 @@ header.w3-container h1 {
 p {
 font-size: 100%;
 }
+
+.top-drivers-text {
+  font-size: 4rem;      /* noch größer */
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-bottom: 0.2em; /* sehr kleiner Abstand */ 
+  }
+
+  .home-title {
+  animation: opac 4s;
+}
+
+@keyframes opac {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
