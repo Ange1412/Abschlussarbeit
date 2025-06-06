@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/allgemein.css">
+    <!--Zentrales Css-->
+    <link rel="stylesheet" href="../Abschlussarbeit/css/styles.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../Abschlussarbeit/media/favicon.png"> 
 </head>
 <body>
 <header class="w3-container w3-black">
   <h1 class="w3-jumbo">
-    <img src="../Abschlussarbeit/media/logo.png" width="150" height="50" style="cursor:pointer;" alt="Logo"
-         onclick="document.getElementById('id01').style.display='block'">
+    <img src="../Abschlussarbeit/media/logo.png" width="150" height="50" class="logo-img" alt="Logo"
+     onclick="document.getElementById('id01').style.display='block'">
   </h1>
   <nav class="nav-right">
     <a href="home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
@@ -55,7 +54,7 @@ window.onclick = function(event) {
 </script>
 </header>
   
-<div class="w3-center home-title" style="margin: 80px 0 60px 0;">
+<div class="w3-center home-title">
   <span class="welcome-text">Welcome to the world of</span>
   <span class="formula1-text">Formula 1</span>
 </div>
@@ -64,7 +63,7 @@ window.onclick = function(event) {
 <div class="w3-row boxenstopp-row">
   <div class="w3-col m6 boxenstopp-video">
     <h2 class="boxenstopp-title">Boxenstopp in der Formel 1</h2>
-    <video width="100%" controls preload="none" style="max-width: 600px;">
+    <video width="100%" controls preload="none">
       <source src="media/boxenstopp_video.mp4" type="video/mp4">
     </video>
   </div>
