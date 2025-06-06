@@ -33,6 +33,21 @@ img {
     box-sizing: border-box; 
     margin-top: 30px;      
   }
-  
+  .best-races-text {
+  font-size: 4rem;      /* noch größer */
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-bottom: 0.2em; /* sehr kleiner Abstand */ 
+  }
+
+  .races-title {
+  animation: opac 4s;
+}
+
+@keyframes opac {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
   
