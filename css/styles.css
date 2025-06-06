@@ -27,6 +27,21 @@ footer, .footer-container {
   color: white !important;
   transition: background 0.2s;
 }
+/* Sticky Navigation */
+header.w3-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 100px;
+}
+header.w3-container h1 {
+  margin: 0;
+}
+
+/*Logo Maus wird zu Hand*/
+.logo-img {
+  cursor: pointer;
+}
 
 /*Modal Styles*/
 .w3-modal-content {
@@ -41,14 +56,6 @@ footer, .footer-container {
   color: #fff !important;
 }
 
-/*Header (alle Seiten)*/
-header.w3-container {
-  position: relative;
-  min-height: 100px;
-}
-header.w3-container h1 {
-  margin: 0;
-}
 
 /*Animationen (global)*/
 @keyframes opac {
@@ -126,19 +133,21 @@ header.w3-container h1 {
   align-items: flex-start;
 }
 .rennen-info-text {
-  margin-left: 40px;
+    padding-right: 24px; /* oder nach Geschmack */
   max-width: 500px;
+  margin-left: 50px;
+
 }
 .rennen-info-bild {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 0;
+   margin-left: 100px;
 }
 .rennen-bild {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   margin-right: 40px;
   margin-top: 0;
@@ -203,4 +212,121 @@ img {
 }
 .races-title {
   animation: opac 4s;
+}
+
+/*Bild World Map*/
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.map-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.world-map {
+  display: block;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+/*Audio und text*/
+.race-intro-text,
+.race-audio {
+  margin-top: 32px;
+  display: block;
+  text-align: left;
+  margin-left: 24px;
+  margin-right: 0;
+  width: 300px;      /* oder eine andere sinnvolle Breite */
+  max-width: 90vw;   /* passt sich an kleine Bildschirme an */
+}
+
+/* Responsive Design für Home */
+@media (max-width: 800px) {
+  .rennen-info-row {
+    flex-direction: column;
+  }
+  .rennen-info-text,
+  .rennen-info-bild {
+    max-width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .rennen-info-bild {
+    margin-top: 24px;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .rennen-bild {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Responsive Design für Races */
+@media (max-width: 800px) {
+  .w3-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .w3-col {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .w3-display-container img {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+  }
+  .w3-display-bottommiddle {
+    position: static !important;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    margin-top: 8px;
+    border-radius: 6px;
+    padding: 4px 0;
+    width: 100%;
+    left: 0 !important;
+    transform: none !important;
+  }
+}
+
+/* Responsive Design für drivers.html */
+
+/* Tablet: 2 Spalten */
+@media (max-width: 900px) {
+  .w3-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .w3-col.col-25 {
+    width: 50% !important;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+/* Smartphone: 1 Spalte */
+@media (max-width: 600px) {
+  .w3-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .w3-col.col-25 {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .fahrer-bild {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
 }
