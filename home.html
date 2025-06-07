@@ -1,99 +1,127 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--W3C Framework-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--Zentrales Css-->
-    <link rel="stylesheet" href="../Abschlussarbeit/css/styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../Abschlussarbeit/media/favicon.png"> 
-</head>
-<body>
-<header class="w3-container w3-black">
-  <h1 class="w3-jumbo">
-    <img src="../Abschlussarbeit/media/logo.png" width="150" height="50" class="logo-img" alt="Logo"
-     onclick="document.getElementById('id01').style.display='block'">
-  </h1>
-  <nav class="nav-right">
-    <a href="home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
-    <a href="../Abschlussarbeit/html/drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
-    <a href="../Abschlussarbeit/html/races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
-  </nav>
 
-<div class="w3-container">
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Aktuelle Rangliste der Fahrer</h2>
-      </header>
-      <div class="w3-container">
-        <p>Platz Fahrer Team Punkte<br>
-        1 Lando Norris McLaren 161<br>
-        2 Oscar Piastri McLaren 158<br>
-        3 Max Verstappen Red Bull 136<br>
-        4 George Russell Mercedes 115</p>
-  
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--W3C Framework-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--Zentrales Css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <script src="js/f1car.js"></script>
+</head>
+
+<body>
+  <header class="w3-container w3-black">
+    <div id="f1-loader">
+      <img src="media/f1.svg"
+        alt="Stylized Formula 1 race car in profile view with bold colors on a white background, evoking excitement and speed, no visible text"
+        width="100" height="50">
+    </div>
+    <h1 class="w3-jumbo">
+      <img src="media/logo.png" width="150" height="50" class="logo-img" alt="Logo"
+        onclick="document.getElementById('id01').style.display='block'">
+    </h1>
+    <nav class="w3-bar w3-right">
+      <a href="home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
+      <a href="html/drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
+      <a href="html/races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
+    </nav>
+    <div class="w3-container">
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <div class="w3-container w3-teal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <h2>Aktuelle Rangliste der Fahrer</h2>
+          </div>
+          <div class="w3-container">
+            <p>Platz Fahrer Team Punkte<br>
+              1 Lando Norris McLaren 161<br>
+              2 Oscar Piastri McLaren 158<br>
+              3 Max Verstappen Red Bull 136<br>
+              4 George Russell Mercedes 115</p>
+
+          </div>
+        </div>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Die Informationen werden von uns laufend aktualisiert!</p>
-      </footer>
+    </div>
+    <script>
+      window.onclick = function (event) {
+        var modal = document.getElementById('id01');
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </header>
+  <footer class="w3-container w3-teal" style="max-width:600px;margin:0 auto;">
+    <p>Die Informationen werden von uns laufend aktualisiert!</p>
+  </footer>
+  <div class="w3-center home-title">
+    <span class="welcome-text">Welcome to the world of</span>
+    <span class="formula1-text">Formula 1</span>
+  </div>
+  <div class="parallax"></div>
+  <!-- Liste mit Hover-Effekt -->
+  <ul class="w3-ul my-hover-list" style="max-width:400px;margin:40px auto;">
+    <li>Formel 1 News</li>
+    <li>Tickets & Termine</li>
+    <li>Fahrer & Teams</li>
+    <li>Strecken & Ergebnisse</li>
+  </ul>
+  <div class="w3-row boxenstopp-row">
+    <div class="w3-col m6 boxenstopp-video">
+      <h2 class="boxenstopp-title">Boxenstopp in der Formel 1</h2>
+      <video class="responsive-video" controls preload="none">
+        <source src="media/boxenstopp_video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="w3-col m6 boxenstopp-text">
+      <p>
+        Ein Boxenstopp ist ein entscheidender Moment im Rennen. Hier werden Reifen gewechselt, kleine Reparaturen
+        durchgeführt und Strategien angepasst. Schnelle und präzise Arbeit der Boxencrew kann über Sieg oder Niederlage
+        entscheiden.
+
+        Doch ein Boxenstopp ist mehr als nur Technik – er ist ein perfekt geprobter Ablauf, bei dem jede Bewegung sitzen
+        muss. Innerhalb von rund zwei Sekunden wird das Auto angehoben, vier Reifen gleichzeitig abmontiert und ersetzt,
+        oft begleitet von strategischen Anweisungen über Funk. Selbst kleinste Verzögerungen können mehrere Positionen
+        im Rennen kosten.
+      </p>
     </div>
   </div>
-</div>
-<script>
-window.onclick = function(event) {
-  var modal = document.getElementById('id01');
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-</header>
-  
-<div class="w3-center home-title">
-  <span class="welcome-text">Welcome to the world of</span>
-  <span class="formula1-text">Formula 1</span>
-</div>
-<div class="parallax"></div>
-
-<div class="w3-row boxenstopp-row">
-  <div class="w3-col m6 boxenstopp-video">
-    <h2 class="boxenstopp-title">Boxenstopp in der Formel 1</h2>
-    <video width="100%" controls preload="none">
-      <source src="media/boxenstopp_video.mp4" type="video/mp4">
-    </video>
+  <!-- Button unten mit dem Bild, um Tickets zu kaufen -->
+  <div class="w3-row rennen-info-row">
+    <div class="w3-col m6 rennen-info-text">
+      <h3>Warum solltest du ein Formel 1 Rennen live besuchen?</h3>
+      <p>
+        Die Atmosphäre an der Rennstrecke ist einzigartig: Der Sound der Motoren, die Geschwindigkeit der Autos und die
+        Begeisterung der Fans machen jeden Grand Prix zu einem unvergesslichen Erlebnis. Vor Ort spürst du die Spannung
+        hautnah und kannst die Teams und Fahrer aus nächster Nähe erleben. Ein Besuch lohnt sich für jeden
+        Motorsport-Fan!
+      </p>
+    </div>
+    <div class="w3-col m6 rennen-info-bild">
+      <a href="https://tickets.formula1.com/" target="_blank" class="w3-button w3-red w3-margin-bottom">Tickets
+        kaufen</a>
+      <img src="media/zielflagge.webp" alt="Formel 1 Zielflagge" class="rennen-bild">
+    </div>
   </div>
-  <div class="w3-col m6 boxenstopp-text">
-    <p>
-      Ein Boxenstopp ist ein entscheidender Moment im Rennen. Hier werden Reifen gewechselt, kleine Reparaturen durchgeführt und Strategien angepasst. Schnelle und präzise Arbeit der Boxencrew kann über Sieg oder Niederlage entscheiden.
-
-Doch ein Boxenstopp ist mehr als nur Technik – er ist ein perfekt geprobter Ablauf, bei dem jede Bewegung sitzen muss. Innerhalb von rund zwei Sekunden wird das Auto angehoben, vier Reifen gleichzeitig abmontiert und ersetzt, oft begleitet von strategischen Anweisungen über Funk. Selbst kleinste Verzögerungen können mehrere Positionen im Rennen kosten.
-    </p>
-  </div>
-</div>
-<!-- Button unten mit dem Bild, um Tickets zu kaufen -->
-<div class="w3-row rennen-info-row">
-  <div class="w3-col m6 rennen-info-text">
-    <h3>Warum solltest du ein Formel 1 Rennen live besuchen?</h3>
-    <p>
-      Die Atmosphäre an der Rennstrecke ist einzigartig: Der Sound der Motoren, die Geschwindigkeit der Autos und die Begeisterung der Fans machen jeden Grand Prix zu einem unvergesslichen Erlebnis. Vor Ort spürst du die Spannung hautnah und kannst die Teams und Fahrer aus nächster Nähe erleben. Ein Besuch lohnt sich für jeden Motorsport-Fan!
-    </p>
-  </div>
-  <div class="w3-col m6 rennen-info-bild">
-    <a href="https://tickets.formula1.com/" target="_blank" class="w3-button w3-red w3-margin-bottom">Tickets kaufen</a>
-    <img src="../Abschlussarbeit/media/zielflagge.webp" alt="Formel 1 Zielflagge" class="rennen-bild">
-  </div>
-</div>
-
-
-  <footer class="w3-container w3-red">
-      <p>Ersteller: Angelina Hunziker und Julie Grimm</p>
-      <p>Dateiname: Angelina_Hunziker_Julie_Grimm_mma24b_M287</p>
-      <p>Abgabedatum: 02.06.2025</p>
-    </footer>
+  <footer class="footer-container">
+    <div class="w3-row" style="width:100%">
+      <div class="w3-col" style="width:33%">
+        <p>Ersteller: Angelina Hunziker und Julie Grimm</p>
+      </div>
+      <div class="w3-col" style="width:33%">
+        <p>Dateiname: Angelina_Hunziker_Julie_Grimm_mma24b_M287</p>
+      </div>
+      <div class="w3-col" style="width:33%">
+        <p>Abgabedatum: 07.06.2025</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

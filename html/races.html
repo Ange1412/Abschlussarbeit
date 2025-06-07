@@ -1,197 +1,202 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <title>Races</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--W3C Framework-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--Zentrales CSS-->
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../media/favicon.png">
- 
+  <title>Races</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--W3C Framework-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--Zentrales CSS-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../media/favicon.png">
+
 </head>
+
 <body>
   <header class="w3-container w3-black">
-  <h1 class="w3-jumbo">
-    <img src="../media/logo.png" width="150" height="50" class="logo-img" alt="Logo"
-     onclick="document.getElementById('id01').style.display='block'">
-  </h1>
-  <nav class="nav-right">
-    <a href="../home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
-    <a href="drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
-    <a href="races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
-  </nav>
-  <div class="w3-container">
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Aktuelle Rangliste der Fahrer</h2>
-      </header>
-      <div class="w3-container">
-        <p>Platz Fahrer Team Punkte<br>
-        1 Lando Norris McLaren 161<br>
-        2 Oscar Piastri McLaren 158<br>
-        3 Max Verstappen Red Bull 136<br>
-        4 George Russell Mercedes 115</p>
-  
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Die Informationen werden von uns laufend aktualisiert!</p>
-      </footer>
-    </div>
-  </div>
-</div>
-<script>
-window.onclick = function(event) {
-  var modal = document.getElementById('id01');
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-</header>
+    <h1 class="w3-jumbo">
+      <img src="../media/logo.png" width="150" height="50" class="logo-img" alt="Logo"
+        onclick="document.getElementById('id01').style.display='block'">
+    </h1>
+    <nav class="nav-right">
+      <a href="../home.html" class="w3-bar-item w3-button w3-border-right">Home</a>
+      <a href="drivers.html" class="w3-bar-item w3-button w3-border-right">Drivers </a>
+      <a href="races.html" class="w3-bar-item w3-button w3-border-right">Races</a>
+    </nav>
+    <div class="w3-container">
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <div class="w3-container w3-teal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <h2>Aktuelle Rangliste der Fahrer</h2>
+          </div>
+          <div class="w3-container">
+            <p>Platz Fahrer Team Punkte<br>
+              1 Lando Norris McLaren 161<br>
+              2 Oscar Piastri McLaren 158<br>
+              3 Max Verstappen Red Bull 136<br>
+              4 George Russell Mercedes 115</p>
 
- 
-   
-<div class="w3-center races-title" style="margin: 80px 0 60px 0;">
-  <span class="best-races-text">The best races</span>
-</div>
- 
- 
-<div class="map-container">
-  <a href="https://www.formula1.com/" target="_blank">
-    <img src="../media/20642069-schwarz-weiss-weltkarte-kostenlos-vektor.jpg" alt="Weltkarte mit Rennstrecken" />
-  </a>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onclick = function (event) {
+        var modal = document.getElementById('id01');
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </header>
+  <footer class="w3-container w3-teal">
+    <p>Die Informationen werden von uns laufend aktualisiert!</p>
+  </footer>
+
+
+
+  <div class="w3-center races-title" style="margin: 80px 0 60px 0;">
+    <span class="best-races-text">The best races</span>
+  </div>
+
+
+  <div class="map-container">
+    <a href="https://www.formula1.com/" target="_blank">
+      <img src="../media/20642069-schwarz-weiss-weltkarte-kostenlos-vektor.jpg" alt="Weltkarte mit Rennstrecken">
+    </a>
+  </div>
   <p class="race-intro-text">Feel the speed. Hear the thrill</p>
-<audio class="race-audio" controls>
+  <audio class="race-audio" controls>
     <source src="../media/Audio_F1.mp3" type="audio/ogg">
     <source src="horse.mp3" type="audio/mpeg">
-</audio>
- 
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%"><h1>Name & Datum </h1></div>
-      <div class="w3-col w3-padding" style="width:60%"><h1>Überischt der Rennstrecke</h1></div>
-      <div class="w3-col w3-padding" style="width:20%"><h1>Resultate</h1></div>
-    </div>
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>23.06.2025</p>
-        <p>Grosser Preis von Monaco</p>
-  
-      </div>
-      <div class="w3-col w3-padding" style="width:60%">
-        <div class="w3-display-container w3-text-white">
-          <img src="../media/monaco_word.jpg" alt="Monaco" style="width:640px">
-          <div class="w3-display-bottommiddle w3-container">Monaco</div>
-          
-        </div>
-      </div>
-      
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>1. Platz: Charles Leclerc - Ferrari</p>
-        <p>2. Platz: Oscar Piastri - McLaren </p>
-        <p>3. Platz: Gabriel Bortoleto - Kick Sauber</p>
-      </div>
-    </div>
-    
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>14.07.2025</p>
-        <p>Grosser Preis von Kanada</p>
-      </div>
-      <div class="w3-col w3-padding" style="width:60%">
-        <div class="w3-display-container w3-text-white">
-          <img src="../media/Montreal_word.jpg" alt="Montreal" style="width:640px">
-          <div class="w3-display-bottommiddle w3-container">Montreal</div>
-        </div>
-      </div>
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>1. Platz: Max Verstappen - Red Bull</p>
-        <p>2. Platz: Charles Leclerc - Ferrari</p>
-        <p>3. Platz:  Lance Stroll - Aston Martin</p>
-        <p></p>
-      </div>
-    </div>
-    
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>06.08.2025</p>
-        <p>Grosser Preis von Italien</p>
-      </div>
-      <div class="w3-col w3-padding" style="width:60%">
-        <div class="w3-display-container w3-text-white">
-          <img src="../media/Monza_word.jpg" alt="MOnza" style="width:640px">
-          <div class="w3-display-bottommiddle w3-container">Monza</div>
-        </div>
-      </div>
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>1. Platz: Lando Norris - McLaren</p>
-        <p>2. Platz: Pierre Gasly - Alpine</p>
-        <p>3. Platz: Carlos Sainz Jr. - Williams</p>
-      </div>
-    </div>
-    
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>09.09.2025</p>
-        <p>Grosser Preis von Japan</p>
-      </div>
-      <div class="w3-col w3-padding" style="width:60%">
-        <div class="w3-display-container w3-text-white">
-          <img src="../media/suzuka_word.jpg" alt="suzuka" style="width:640px">
-          <div class="w3-display-bottommiddle w3-container">Suzuka</div>
-        </div>
-      </div>
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>1. Platz: Lewis Hamilton - Ferrari</p>
-        <p>2. Platz: Liam Lawson - Red Bull</p>
-        <p>3. Platz: George Russell - Mercedes</p>
-      </div>
-    </div>
-    
-    <div class="w3-row">
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>31.10.2025</p>
-        <p>Grosser Preis von Australien</p>
+  </audio>
 
+  <div class="w3-row w3-hide-small">
+    <div class="w3-col w3-padding" style="width:20%">
+      <h1>Name & Datum </h1>
+    </div>
+    <div class="w3-col w3-padding w3-center" style="width:60%">
+      <h1>Überischt der Rennstrecke</h1>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <h1>Resultate</h1>
+    </div>
+  </div>
+  <div class="w3-panel w3-padding-4"></div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>23.06.2025</p>
+      <p>Grosser Preis von Monaco</p>
+    </div>
+    <div class="w3-col w3-padding  w3-center" style="width:60%">
+      <div class="w3-display-container w3-text-white">
+        <img src="../media/monaco_word.jpg" alt="Monaco" style="width:640px">
+        <div class="w3-display-bottommiddle w3-container">Monaco</div>
       </div>
-      <div class="w3-col w3-padding" style="width:60%">
-  <div class="w3-display-container w3-text-white">
-    <img src="../media/Melbourne_word.jpg" alt="Melbourne" style="width:640px">
-    <div class="w3-display-bottommiddle w3-container">Melbouorne</div>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>1. Platz: Charles Leclerc - Ferrari</p>
+      <p>2. Platz: Oscar Piastri - McLaren </p>
+      <p>3. Platz: Gabriel Bortoleto - Kick Sauber</p>
+    </div>
+  </div>
+  <div class="w3-panel w3-padding-16"></div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>14.07.2025</p>
+      <p>Grosser Preis von Kanada</p>
+    </div>
+    <div class="w3-col w3-padding  w3-center" style="width:60%">
+      <div class="w3-display-container w3-text-white">
+        <img src="../media/Montreal_word.jpg" alt="Montreal" style="width:640px">
+        <div class="w3-display-bottommiddle w3-container">Montreal</div>
+      </div>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>1. Platz: Max Verstappen - Red Bull</p>
+      <p>2. Platz: Charles Leclerc - Ferrari</p>
+      <p>3. Platz: Lance Stroll - Aston Martin</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="w3-panel w3-padding-16"></div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>06.08.2025</p>
+      <p>Grosser Preis von Italien</p>
+    </div>
+    <div class="w3-col w3-padding  w3-center" style="width:60%">
+      <div class="w3-display-container w3-text-white">
+        <img src="../media/Monza_word.jpg" alt="MOnza" style="width:640px">
+        <div class="w3-display-bottommiddle w3-container">Monza</div>
+      </div>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>1. Platz: Lando Norris - McLaren</p>
+      <p>2. Platz: Pierre Gasly - Alpine</p>
+      <p>3. Platz: Carlos Sainz Jr. - Williams</p>
+    </div>
+  </div>
+  <div class="w3-panel w3-padding-16"></div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>09.09.2025</p>
+      <p>Grosser Preis von Japan</p>
+    </div>
+    <div class="w3-col w3-padding  w3-center" style="width:60%">
+      <div class="w3-display-container w3-text-white">
+        <img src="../media/suzuka_word.jpg" alt="suzuka" style="width:640px">
+        <div class="w3-display-bottommiddle w3-container">Suzuka</div>
+      </div>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>1. Platz: Lewis Hamilton - Ferrari</p>
+      <p>2. Platz: Liam Lawson - Red Bull</p>
+      <p>3. Platz: George Russell - Mercedes</p>
+    </div>
+  </div>
+  <div class="w3-panel w3-padding-16"></div>
+
+  <div class="w3-row">
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>31.10.2025</p>
+      <p>Grosser Preis von Australien</p>
+    </div>
+    <div class="w3-col w3-padding  w3-center" style="width:60%">
+      <div class="w3-display-container w3-text-white">
+        <img src="../media/Melbourne_word.jpg" alt="Melbourne" style="width:640px">
+        <div class="w3-display-bottommiddle w3-container">Melbourne</div>
+      </div>
+    </div>
+    <div class="w3-col w3-padding" style="width:20%">
+      <p>1. Platz: Lando Norris - McLaren</p>
+      <p>2. Platz: Yuki Tsunoda - Racing Bulls</p>
+      <p>3. Platz: Esteban Ocon - Haas</p>
+    </div>
   </div>
 
-      </div>
-      <div class="w3-col w3-padding" style="width:20%">
-        <p>1. Platz: Lando Norris - McLaren</p>
-        <p>2. Platz: Yuki Tsunoda - Racing Bulls</p>
-        <p>3. Platz: Esteban Ocon - Haas</p>
-      </div>
-    </div>
 
-    
-
-
-</body>
-</html>
-
-
-
- 
-    <footer class="footer-container">
-      <div class="footer-box">
+  <footer class="footer-container">
+    <div class="w3-row" style="width:100%">
+      <div class="w3-col" style="width:33%">
         <p>Ersteller: Angelina Hunziker und Julie Grimm</p>
       </div>
-      <div class="footer-box">
+      <div class="w3-col" style="width:33%">
         <p>Dateiname: Angelina_Hunziker_Julie_Grimm_mma24b_M287</p>
       </div>
-      <div class="footer-box">
-        <p>Abgabedatum: 02.06.2025</p>
+      <div class="w3-col" style="width:33%">
+        <p>Abgabedatum: 07.06.2025</p>
       </div>
-    </footer>
+    </div>
+  </footer>
+
 </body>
+
 </html>
